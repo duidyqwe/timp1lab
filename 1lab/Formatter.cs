@@ -2,6 +2,8 @@ static class Formatter
 {
     public static string Format(Item item)
     {
-        return "PROC: " + item.Name;
+
+        return "PROC: " + item.Name + "; mb=" + item.MemoryMb;
+
     }
 }
