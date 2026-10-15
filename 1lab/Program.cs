@@ -14,6 +14,11 @@ class Program
         if (args.Length > 0 && args[0] == "empty") items = Array.Empty<Item>();
         if (args.Length > 0 && args[0] == "test1") items = new[] { new Item("b", 10), new Item("a", 10) };
         if (args.Length > 0 && args[0] == "test2") items = new[] { new Item("idle", 0) };
+        if (args.Length > 0 && args[0] == "test3") items = new[] { 
+            new Item("chrome", 1500), 
+            new Item("notepad", 50), 
+            new Item("chrome", 1500) 
+        };
 
         Item[] selected = Selection.Apply(items);
         foreach (Item item in selected)
